@@ -1,3 +1,18 @@
+# macOS
+.DS_Store
+
+# Upstream sensor module — cloned and built by bin/build-module.sh
+driver/nct6687d/
+
+# Kernel / DKMS build products (if anything lands outside the clone)
+*.ko
+*.o
+*.mod
+*.mod.c
+Module.symvers
+modules.order
+.*.cmd
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

@@ -1,0 +1,28 @@
+{
+  "enabled": true,
+  "tau_s": 45.0,
+  "deadband_c": 2.0,
+  "hold_s": 8.0,
+  "slew_pct_s": 8.0,
+  "pump_min_rpm": 2500,
+  "fan_curve": [
+    [35.0, 40.0],
+    [55.0, 45.0],
+    [75.0, 50.0],
+    [95.0, 55.0]
+  ],
+  "pump_curve": [
+    [40.0, 50.0],
+    [60.0, 55.0],
+    [80.0, 60.0],
+    [100.0, 65.0]
+  ],
+  "roles": {},
+  "fixed": {},
+  "lights": {
+    "mode": "static",
+    "color": "009f50",
+    "speed": 50,
+    "zone": "all"
+  }
+}

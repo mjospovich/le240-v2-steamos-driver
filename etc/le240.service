@@ -1,0 +1,17 @@
+[Unit]
+Description=LE240 V2 fan, pump, and lighting controller
+After=systemd-modules-load.service
+StartLimitIntervalSec=60
+StartLimitBurst=10
+
+[Service]
+Type=simple
+WorkingDirectory=@ROOT@
+Environment=PYTHONPATH=@ROOT@
+ExecStartPre=/bin/sh -c 'modprobe -r nct6683 || true; grep -q "^nct6687 " /proc/modules || insmod @ROOT@/driver/nct6687d/nct6687.ko'
+ExecStart=/usr/bin/python3 -m le240
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

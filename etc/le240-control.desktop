@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=LE240
+Comment=Fan, pump, and lighting control for the LE240 V2
+Exec=@ROOT@/bin/le240-control
+Path=@ROOT@
+Terminal=false
+Categories=Settings;HardwareSettings;
+Icon=preferences-system
+StartupNotify=true
